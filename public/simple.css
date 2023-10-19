@@ -36,20 +36,76 @@ html {
   min-height: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+  padding-top: 25%;
+  margin: 2%;
+}
+
+.center-lite {
+  text-align: center;
+  padding-top: 10%;
+  margin: 2%;
+}
+
+.down-arrow-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  position: absolute;  /* Absolute positioning */
+  bottom: 10vh;        /* Position it 10px from the bottom */
+  left: 50%;           /* Center it horizontally */
+  transform: translateX(-50%); /* This ensures the button is truly centered by shifting it left by half its width */
+}
+
+.down-arrow-btn:hover {
+  opacity: 0.7;
+}
+.page-vh {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* To ensure that the items inside the title are vertically stacked */
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
 body {
   font-family: 'Colfax Web', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
-
-  padding: 40px 20px;
   margin-left: auto;
   margin-right: auto;
+  padding: 2%;
 
   background: white;
   color: #2b3729;
 
   max-width: 660px;
-  min-height: 100%;
 }
 
 h1, h2, h3 {
@@ -62,7 +118,7 @@ h2 {
 
 p {
   font-family: "Colfax Web", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 145%;
 }
 
@@ -97,17 +153,17 @@ a:hover {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding:0px 1.35em;
+  padding:0px 1.5em;
   background-color:rgba(0,0,0,0.05);
   border: 0;
   border-radius:5px;
   display:inline-block;
   text-transform:uppercase;
   text-decoration:none;
-  color:#000;
+  color:#000000;
   font-weight:600;
   letter-spacing:1px;
-  font-size:10px;
+  font-size:14px;
 }
 
 .button:hover {
@@ -120,6 +176,7 @@ a:hover {
   display:flex;
   flex-direction:row;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .profile-pic > img {
@@ -198,8 +255,12 @@ a:hover {
 @media (prefers-color-scheme: dark) {
   /* The following was 99% written by GitHub Copilot. */
   body {
-    background: #222;
+    background: #1d1d19;
     color: #fff;
+  }
+
+  .down-arrow-btn {
+    color: white;
   }
 
   a {
@@ -211,12 +272,12 @@ a:hover {
   }
 
   .button {
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(90, 89, 89, 0.625);
     color: #fff;
   }
 
   .button:hover {
-    background-color: rgba(255,255,255,0.08);
+    background-color: rgba(90, 89, 89, 0.5);
     color: #fff;
   }
 
