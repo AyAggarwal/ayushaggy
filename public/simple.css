@@ -55,7 +55,7 @@ html {
 .down-arrow-btn {
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 0rem;
   cursor: pointer;
   transition: opacity 0.3s;
   position: absolute;  /* Absolute positioning */
