@@ -167,15 +167,17 @@ html {
 .project {
   position: relative;
   overflow: hidden;
+  padding-top: 22px;
 }
 
 body {
-  font-family: 'Colfax Web', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', -apple-system, system-ui, BlinkMacSystemFont, Arial, sans-serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   margin-left: auto;
   margin-right: auto;
   padding: 2%;
+  letter-spacing: 0.01em;
 
   background: white;
   color: #1d1d19;
