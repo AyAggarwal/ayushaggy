@@ -10,6 +10,12 @@
 </head>
 <body>
 <section class = "title">
+  <div class="switch-container">
+    <label class="switch">
+      <input type="checkbox" id="toggleTheme" checked>
+      <span class="slider round"></span>
+    </label>
+  </div>
   <div class="profile">
     <div class="profile-text">
       <h1>Ayush Aggarwal</h1>
@@ -27,34 +33,33 @@
       </div>
     </div>
   </div>
-  <button id="scrollDownButton1" class="down-arrow-btn"><img src="./assets/img/nav/down-arrow.svg" alt="downward arrow" style = "width: 14%; height:auto"></button> <!-- Down arrow symbol -->
+  <button id="scrollDownButton1" class="down-arrow-btn"><img class = "arrow" src="./assets/img/nav/down-arrow.svg" alt="downward arrow"></button> <!-- Down arrow symbol -->
 </section>
 
-<section id = "bg" class="page-vh">
-  <h2 class="center">Background</h2>
-  <h4>
+<section id = "bg" class="page">
+  <h2 class="center-lite">Background</h2>
+  <h4 style = "text-align: center">
     "The best path is to follow the heart!"
   </h4>
 
   <p>
-    I graduated from the University of California, Berkeley in 2022 with a B.S. in Electrical Engineering and Computer Science, having led Blockchain at
-     Berkeley. 
+    I graduated from the Cal Berkeley in 2022 with a B.S. in Electrical Engineering and Computer Science, having led Blockchain at
+     Berkeley during my time there. 
      
-     <br/><br/>Currently, I am passionate about exploring the potential of real time systems, 
-     sensors, and hardware for their wide array of exciting applications. 
+     <br/><br/>Currently, I am working on real-time processing systems (ask me why!). 
     
-    <br /> <br /> You should reach out for systems programming, creative direction, or product design! Feel free to reach out at <b>aagfye@gmail.com</b>
+    <br /> <br />Feel free to reach out for help with systems programming, creative direction, or product design! My email is <b>aagfye@gmail.com</b>
   </p>
-  <button id="scrollDownButton2" class="down-arrow-btn"><img src="./assets/img/nav/down-arrow.svg" alt="downward arrow" style = "width: 14%; height:auto"></button> <!-- Down arrow symbol -->
+  <!-- <button id="scrollDownButton2" class="down-arrow-btn"><img class = "arrow" src="./assets/img/nav/down-arrow.svg" alt="downward arrow"></button> -->
 </section>
 <section id="projects" class="page">
   <h2 id = "projects-title" class="center-lite">Purely Personal Projects</h2>
   <!-- <p style = "text-align:center">Fun projects focused on real-time audio processing, visual math, and blockchain</p><br/> -->
   <section class = "project">
-    <span class="pub">Camera Theramin <a href="https://github.com/AyAggarwal/CameraTheramin" style="border-bottom:none"><button class="button">Code</button></a><button class="button" id="toggleTikTokButton">Show Video</button></span><br />
+    <span class="pub">Camera Theramin <a href="https://github.com/AyAggarwal/CameraTheramin" style="border-bottom:none"><button class="button">Code</button></a><button class="button" id="toggleTikTokButton">Hide Video</button></span><br />
     OpenCV hand tracking applied to frequency generation in python to create a theramin. 
     <br />
-    <div id="tiktok-container" class="hidden">
+    <div id="tiktok-container">
       <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ayushaggy/video/7201282377551842602" data-video-id="7201282377551842602" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@ayushaggy" href="https://www.tiktok.com/@ayushaggy?refer=embed">@ayushaggy</a> <p>Gonna add more and post it on GitHub soon!  </p> <a target="_blank" title="♬ original sound - Ayush Aggy" href="https://www.tiktok.com/music/original-sound-7201282371558148907?refer=embed">♬ original sound - Ayush Aggy</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
     </div>
       </section>
