@@ -29,15 +29,20 @@ document
     });
   });
 
+//hide button
 document
-  .getElementById("scrollDownButton3")
+  .getElementById("toggleTikTokButton")
   .addEventListener("click", function () {
-    // Get the position of the body element to scroll to.
-    let bodyPos = document.body.getBoundingClientRect().top;
+    var tiktokContainer = document.getElementById("tiktok-container");
+    var buttonLabel = document.getElementById("toggleTikTokButton");
 
-    // Using the 'window' object's scroll method to scroll to the desired position.
-    window.scrollTo({
-      top: bodyPos + window.innerHeight, // Scrolls down by one viewport height.
-      behavior: "smooth", // Smooth scrolling.
-    });
+    // Toggle the hidden class
+    tiktokContainer.classList.toggle("hidden");
+
+    // Update the button label accordingly
+    if (tiktokContainer.classList.contains("hidden")) {
+      buttonLabel.textContent = "Show Video";
+    } else {
+      buttonLabel.textContent = "Hide Video";
+    }
   });
