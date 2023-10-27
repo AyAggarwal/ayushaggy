@@ -42,6 +42,26 @@ if (!document.documentElement.hasAttribute("data-theme")) {
   document.documentElement.setAttribute("data-theme", "dark"); // default to dark
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const themeToggle = document.getElementById("themeToggle");
+  const body = document.querySelector("body");
+
+  function updateTheme() {
+    if (themeToggle.checked) {
+      body.setAttribute("data-theme", "dark"); // Assuming you're using data-theme attribute for theming
+    } else {
+      body.setAttribute("data-theme", "light");
+    }
+  }
+
+  // Set the checkbox to checked by default and apply the dark theme
+  themeToggle.checked = true;
+  updateTheme();
+
+  // Listen for changes to the checkbox and update the theme
+  themeToggle.addEventListener("change", updateTheme);
+});
+
 // let scrollTimeout; // To store the timeout reference
 
 // document

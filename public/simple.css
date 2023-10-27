@@ -92,6 +92,10 @@ html {
   min-height: 100%;
 }
 
+h4 {
+  letter-spacing: 1px;
+}
+
 .hidden {
   display: none;
 }
@@ -109,14 +113,14 @@ html {
 }
 
 @keyframes pointDown {
-  0%, 20%, 50%, 80%, 100% {
-      transform: rotate(0deg);
+  0%, 90% {
+      transform: translateY(0); /* Arrow's initial position */
   }
-  40% {
-      transform: rotate(15deg);
+  70% {
+      transform: translateY(10px); /* Arrow moves downwards */
   }
-  60% {
-      transform: rotate(-15deg);
+  100% {
+      transform: translateY(0); /* Arrow snaps back up */
   }
 }
 
@@ -133,7 +137,7 @@ html {
   cursor: pointer;
   transition: opacity 0.3s;
   position: absolute;  /* Absolute positioning */
-  bottom: 100px;        /* Position it 10px from the bottom */
+  bottom: 0px;        /* Position it 10px from the bottom */
   left: 50%;           /* Center it horizontally */
   transform: translateX(-50%); /* This ensures the button is truly centered by shifting it left by half its width */
 }
@@ -155,12 +159,11 @@ html {
 }
 
 .title {
-  margin-top: -60px;
+  margin-top: 50px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column; /* To ensure that the items inside the title are vertically stacked */
 }
 
@@ -168,6 +171,7 @@ html {
   position: relative;
   overflow: hidden;
   padding-top: 22px;
+  margin-bottom: 20px;
 }
 
 body {
@@ -217,7 +221,6 @@ a, .button, .social > a > img {
 
 a {
   color: #0f73aa;
-  border-bottom: 1px dotted #0f73aa;
   text-decoration: none;
 }
 
@@ -331,7 +334,7 @@ a:hover {
   }
 }
 [data-theme="dark"] body {
-  background: #1d1919;
+  background: #040404;
   color: #fff;
 }
 
